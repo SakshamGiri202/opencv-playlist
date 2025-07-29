@@ -1,4 +1,4 @@
-# OpenCV Course – Full Tutorial with Python (YouTube Playlist)
+# OpenCV Playlist
 
 This repository contains structured notes and code summaries based on the [OpenCV Course - Full Tutorial with Python](https://www.youtube.com/watch?v=oXlwWbU8l2o) by Jason Dsouza. The course covers everything from the very basics of image and video manipulation to advanced computer vision concepts. This README provides an organized overview, code highlights, and links to relevant resources.
 
