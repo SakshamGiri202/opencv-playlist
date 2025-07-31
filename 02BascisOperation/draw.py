@@ -1,8 +1,8 @@
 import cv2 as cv
 import numpy as np
 
-blank = np.zeros((500,500, 3), dtype="uint8")
-# cv.imshow('blank', blank)
+blank = np.zeros((500, 500, 3), dtype="uint8")
+cv.imshow("blank", blank)
 
 # 1. paint the image a certain color
 # blank[200:300, 300:400]=0,0,255
@@ -16,7 +16,7 @@ blank = np.zeros((500,500, 3), dtype="uint8")
 # cv.circle(blank,(blank.shape[1]//2, blank.shape[0]//2), 40, (0,255,0), thickness=-1)
 # cv.imshow('circle', blank)
 
-#  5. draw a line 
+#  5. draw a line
 # cv.line(blank, (0,0), (blank.shape[1]//2, blank.shape[0]//2), (255,255,255), thickness=3),
 # cv.imshow('line', blank)
 
@@ -25,10 +25,9 @@ blank = np.zeros((500,500, 3), dtype="uint8")
 # cv.imshow("text", blank)
 
 
-
-
 # img = cv.imread('/home/shaggy/Public/opencv-playlist/Resources/Photos/cat.jpg')
 # cv.imshow('cat', img)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
+
