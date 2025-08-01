@@ -21,12 +21,12 @@ dilated = cv.dilate(canny, (7, 7), iterations=3)
 cv.imshow("dilated", dilated)
 
 # eroding
-eroded = cv.erode(dilated, (3, 3), iteration=3)
-cv.imshow("eroded", eroded)
+#eroded = cv.erode(dilated, (3, 3), iteration=3)
+#cv.imshow("eroded", eroded)
 
 # resize
 
-resized = cv.resized(img, (500, 500), interpolation=cv.INTER_CUBIC)
+resized = cv.resize(img, (500, 500), interpolation=cv.INTER_CUBIC)
 cv.imshow("resized", resized)
 
 # cropped

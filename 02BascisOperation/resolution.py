@@ -1,6 +1,6 @@
-import cv2 as cv
+import cv2
 
-capture = cv.VideoCapture(0)  # 0 is usually the default camera
+capture = cv2.VideoCapture(0)  # 0 is usually the default camera
 
 def changeRes(width, height):
     # for live video only
@@ -12,10 +12,10 @@ while True:
     isTrue, frame = capture.read()
     if not isTrue:
         break
-    cv.imshow('Webcam', frame)
+    cv2.imshow('Webcam', frame)
 
-    if cv.waitKey(20) & 0xFF == ord('q'):  # Press 'q' to quit
+    if cv2.waitKey(20) & 0xFF == ord('q'):  # Press 'q' to quit
         break
 
 capture.release()
-cv.destroyAllWindows()
+cv2.destroyAllWindows()
