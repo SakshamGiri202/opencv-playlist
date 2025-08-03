@@ -1,7 +1,7 @@
 import cv2 as cv
 
-# This  finds and Load image from file path
-img_path = "/home/shaggy/Public/opencv-playlist/Resources/Photos/cat.jpg"
+# This  finds and Load image from file ath
+mg_path = "/home/shaggy/Public/opencv-playlist/Resources/Photos/cat.jpg"
 img = cv.imread(img_path)
 
 # Display image window named 'Cat'
