@@ -12,8 +12,8 @@ cv.imshow("cat", img)
 #
 
 # BGR to HSV
-hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
-cv.imshow("hsv", hsv)
+# hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+# cv.imshow("hsv", hsv)
 
 # BGR TO lAB
 # lab = cv.cvtColor(img, cv.COLOR_BGR2LAB)
