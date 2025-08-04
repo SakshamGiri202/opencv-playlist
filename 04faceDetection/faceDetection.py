@@ -19,15 +19,16 @@ cv.imshow("Group of 5 people", img)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow("gray", gray)
 
-# Fix the Haar cascade path - use built-in cascade
-# Your original path "/haar_face.xml" is incorrect (starts with /)
-cascade_path = cv.data.haarcascades + 'haarcascade_frontalface_default.xml'
+
+cascade_path = cv.data.haarcascades + "haarcascade_frontalface_default.xml"
 haar_cascade = cv.CascadeClassifier(cascade_path)
 
 # Check if cascade loaded successfully
 if haar_cascade.empty():
     print(f"Error: Could not load Haar cascade from {cascade_path}")
-    print("Make sure opencv-contrib-python is installed: pip install opencv-contrib-python")
+    print(
+        "Make sure opencv-contrib-python is installed: pip install opencv-contrib-python"
+    )
     exit(1)
 
 # Detect faces (increased minNeighbors for better accuracy)
@@ -35,9 +36,10 @@ faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=1
 print(f"Number of faces found = {len(faces_rect)}")
 
 # Draw rectangles around faces - fix the tuple unpacking
-for (x, y, w, h) in faces_rect:  # Need parentheses around tuple
+for x, y, w, h in faces_rect:  # Need parentheses around tuple
     cv.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), thickness=2)
 
 cv.imshow("Detected Faces", img)
 cv.waitKey(0)
 cv.destroyAllWindows()
+
